@@ -1,150 +1,130 @@
 <div class="container flex breadcrumb">
   <a routerLink="/home">Home</a>
-  <p>></p>
-  <p>{{movieTitle}}</p>
+  <span>›</span>
+  <p>{{ movieTitle }}</p>
 </div>
 
-<article class="flex container">
-  <img (error)="setDefaultPoster($event)" [src]="moviePoster" alt="">
+<section
+  class="movie-hero"
+  style="
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0,0,0,.95),
+        rgba(0,0,0,.72),
+        rgba(0,0,0,.35)
+      ),
+      url('../../../assets/cinemabg.jpg');
+  ">
+  <div class="container movie-hero-content">
+    <img
+      class="movie-poster"
+      (error)="setDefaultPoster($event)"
+      [src]="moviePoster"
+      alt="Poster de {{ movieTitle }}">
 
-  <div class="flex movieinfo">
-    <h1>{{ movieTitle }}</h1>
+    <div class="movie-info">
+      <span class="eyebrow">Kalidah Atlas</span>
+      <h1>{{ movieTitle }}</h1>
 
-    <div class="flex subinfo">
-      <div *ngFor="let genre of movieGenre">
-        <p (click)="filterByGenre(genre)" style="cursor: pointer;">{{ genre }}</p>
-      </div>
-    </div>
-    <div class="flex subinfo">
-      <p (click)="filterByType(movieType)" style="cursor: pointer;">{{ movieType }}</p>
-      <p (click)="filterByYear(movieYear)" style="cursor: pointer;">{{ movieYear }}</p>
-      <p *ngIf="movieType === 'movie'">{{ movieRunTime | tempoDeFilme }}</p>
-      <p *ngIf="movieType === 'series'">{{ totalSeasons }} seasons</p>
-      <p *ngIf="movieimdbRating && movieimdbRating !== 'N/A'" (click)="filterByRating()" style="cursor: pointer;">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-          <path fill="yellow" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327l4.898.696c.441.062.612.636.282.95l-3.522 3.356l.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
-        </svg>
-        {{ movieimdbRating }} <span>/ 10 IMDB</span>
-      </p>
-    </div>
-
-    <p>{{ moviePlot }}</p>
-    <hr>
-    <div *ngIf="movieType === 'movie' && movieDirector !== 'N/A'">
-      <p><span>Director: </span></p>
-      <div *ngFor="let director of movieDirector" (click)="filterByDirector(director)" style="cursor: pointer;">
-        <span>{{ director }}</span>
-      </div>
-      <hr>
-    </div>
-
-    <div class="flex subcategory">
-      <div>
-        <p><span>Writer:</span></p>
-        <div *ngFor="let writer of movieWriter">
-          <p (click)="filterByWriter(writer)" style="cursor: pointer;">{{ writer }}</p>
-        </div>
+      <div class="chips">
+        <button *ngFor="let genre of movieGenre" (click)="filterByGenre(genre)">
+          {{ genre }}
+        </button>
       </div>
 
-      <div>
-        <p><span>Cast:</span></p>
-        <div *ngFor="let actor of movieActors">
-          <p (click)="filterByActor(actor)" style="cursor: pointer;">{{ actor }}</p>
-        </div>
+      <div class="meta">
+        <button (click)="filterByType(movieType)">{{ movieType }}</button>
+        <button (click)="filterByYear(movieYear)">{{ movieYear }}</button>
+        <span *ngIf="movieType === 'movie'">{{ movieRunTime | tempoDeFilme }}</span>
+        <span *ngIf="movieType === 'series'">{{ totalSeasons }} seasons</span>
+
+        <button
+          *ngIf="movieimdbRating && movieimdbRating !== 'N/A'"
+          class="rating-chip"
+          (click)="filterByRating()">
+          ⭐ {{ movieimdbRating }} <small>/ 10 IMDb</small>
+        </button>
       </div>
 
-      <div>
-        <p><span>Ratings:</span></p>
-        <div *ngFor="let rating of movieRatings">
-          <p>{{ rating }}</p>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div>
-      <p><span>Language:</span></p>
-      <div *ngFor="let language of movieLanguage.split(',')">
-        <p (click)="filterByLanguage(language)"style="cursor: pointer;">{{ language }}</p>
-      </div>
-    </div>
-
-    <hr>
-    <div>
-      <p><span>Country:</span></p>
-      <div class="white-text" *ngFor="let country of movieCountry.split(',')"  style="cursor: pointer;">
-        <p (click)="filterByCountry(country)"> {{ country }} </p>
-      </div>
-    </div>
-    <hr>
-    <p><span>Awards:</span> {{ movieAwards }}</p>
-    <hr>
-  </div>
-</article>
-
-<!-- If have comments and review-->
-<article class="container">
-  <div *ngIf="tecaNota != ''"
-      class="comments bounce-animation"
-      [ngStyle]="{'background-color': tecaReviewColor}"
-      [ngClass]="{'low-score': +tecaNota <= 5, tecaReviewColor: !!tecaReviewColor}">
-    <h3>Teca Review:</h3>
-    <p>{{tecaNota}}</p>
-  </div>
-  <div *ngIf="tecaComments != ''" class="comments bounce-animation">
-    <h3>Teca comments:</h3>
-    <p>{{ tecaComments }}</p>
-  </div>
-  <div *ngIf="tecaVideo.length > 0" class="comments bounce-animation">
-    <h3>Teca video Recomendations:</h3>
-    <iframe *ngFor="let video of tecaVideo"
-      [src]="getSafeUrl(video)"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-      style="width: 100%; height: 515px;">
-    </iframe>
-  </div>
-</article>
-
-<!-- series -->
-<section *ngIf="movieType === 'series' && seasons.length >= 1" class="flex container seasonsinfo">
-  <div class="seasonsselect flex container">
-    <p>Seasons:</p>
-    <div *ngFor="let season of seasons">
-      <button class="border" (click)="selectSeason(season)" [ngClass]="{'active': season.active}">{{season.Season}}</button>
-    </div>
-  </div>
-
-  <div class="subinfo container">
-    <div *ngIf="selectedSeason">
-      <h2>Season {{ selectedSeason.Season }}<span style="font-size: .9rem;"> ({{selectedSeasonYear}})</span></h2>
-      <div class="grid">
-        <section class="episodes" *ngFor="let episode of selectedSeason.Episodes">
-            <div>
-              <h4>Episode {{ episode.Episode }} - {{ episode.Title }}</h4>
-              <img [src]='episode.Poster' (error)="setDefaultPoster($event)" alt="Poster of episode {{ episode.Episode }}">
-            </div>
-            <div class="flex episodeinfo">
-              <p>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path fill="yellow" d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327l4.898.696c.441.062.612.636.282.95l-3.522 3.356l.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
-                {{ episode.imdbRating }} <span>/10 IMDB</span>
-              </p>
-              <p><span>Director:</span> {{ episode.Director }}</p>
-              <p>{{ episode.Plot }}</p>
-            </div>
-          </section>
-      </div>
+      <p class="plot">{{ moviePlot }}</p>
     </div>
   </div>
 </section>
 
-<!-- Modal para busca -->
-<div id="data-source-modal" class="modal" style="display: none;">
-  <div class="modal-content">
-    <h2>Opaaaaa</h2>
-    <p style="padding-bottom: 30px;">{{ modalMessage }}</p>
-    <button  (click)="closeModal()">Fechar</button>
+<section class="container details-section">
+  <div class="details-grid">
+    <div *ngIf="movieType === 'movie' && movieDirector !== 'N/A'" class="detail-card">
+      <strong>Director</strong>
+      <p *ngFor="let director of movieDirector" (click)="filterByDirector(director)">
+        {{ director }}
+      </p>
+    </div>
+
+    <div class="detail-card">
+      <strong>Writer</strong>
+      <p *ngFor="let writer of movieWriter" (click)="filterByWriter(writer)">
+        {{ writer }}
+      </p>
+    </div>
+
+    <div class="detail-card">
+      <strong>Cast</strong>
+      <p *ngFor="let actor of movieActors" (click)="filterByActor(actor)">
+        {{ actor }}
+      </p>
+    </div>
+
+    <div class="detail-card">
+      <strong>Ratings</strong>
+      <p *ngFor="let rating of movieRatings">{{ rating }}</p>
+    </div>
+
+    <div class="detail-card">
+      <strong>Language</strong>
+      <p *ngFor="let language of movieLanguage.split(',')" (click)="filterByLanguage(language)">
+        {{ language }}
+      </p>
+    </div>
+
+    <div class="detail-card">
+      <strong>Country</strong>
+      <p *ngFor="let country of movieCountry.split(',')" (click)="filterByCountry(country)">
+        {{ country }}
+      </p>
+    </div>
   </div>
-</div>
+
+  <div class="awards-card">
+    <strong>Awards</strong>
+    <p>{{ movieAwards }}</p>
+  </div>
+</section>
+
+<section class="container teca-section">
+  <div
+    *ngIf="tecaNota != ''"
+    class="teca-score"
+    [ngStyle]="{'background-color': tecaReviewColor}"
+    [ngClass]="{'low-score': +tecaNota <= 5}">
+    <span>Teca Review</span>
+    <strong>{{ tecaNota }}</strong>
+  </div>
+
+  <div *ngIf="tecaComments != ''" class="teca-card">
+    <h3>Teca Comments</h3>
+    <p>{{ tecaComments }}</p>
+  </div>
+
+  <div *ngIf="tecaVideo.length > 0" class="teca-card video-card">
+    <h3>Teca Video Recommendations</h3>
+
+    <iframe
+      *ngFor="let video of tecaVideo"
+      [src]="getSafeUrl(video)"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
