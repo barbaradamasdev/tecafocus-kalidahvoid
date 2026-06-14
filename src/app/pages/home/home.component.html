@@ -47,13 +47,24 @@ movieBgPoster="../../../assets/banner/flow-wallpapper.jpg"></app-banner>
   </div>
 </section>
 
-<section *ngFor="let category of categories.slice(0, 3)" class="container">
-  <div class="flex titles">
-    <h2><span class="category">The best of </span>{{ category.title }}</h2>
-    <a [routerLink]="['/thebest', category.title]"><h4>Show more +</h4></a>
+<section *ngFor="let category of categories.slice(0, 3)" class="container curated-section">
+  <div class="section-header">
+    <div>
+      <span class="section-eyebrow">The best of</span>
+      <h2>{{ category.title }}</h2>
+    </div>
+
+    <a class="show-more" [routerLink]="['/thebest', category.title]">
+      Show more <span>+</span>
+    </a>
   </div>
-  <div class="grid carousel">
-    <app-card *ngFor="let movie of category.movies.slice(0, 7)" [movieTitle]="movie.Title" [tecaNota]="movie.tecaNota"></app-card>
+
+  <div class="grid carousel curated-carousel">
+    <app-card
+      *ngFor="let movie of category.movies.slice(0, 7)"
+      [movieTitle]="movie.Title"
+      [tecaNota]="movie.tecaNota">
+    </app-card>
   </div>
 </section>
 
@@ -61,15 +72,26 @@ movieBgPoster="../../../assets/banner/flow-wallpapper.jpg"></app-banner>
 
 <app-banner movieTitle="Bulgasal" movieBgPoster="https://artworks.thetvdb.com/banners/v4/series/398825/backgrounds/61c7663f939b9.jpg"></app-banner>
 
-  <section *ngFor="let category of categories.slice(3, 5)" class="container">
-    <div class="flex titles">
-      <h2><span class="category">The best of </span>{{ category.title }}</h2>
-      <a [routerLink]="['/thebest', category.title]"><h4>Show more +</h4></a>
+<section *ngFor="let category of categories.slice(3, 5)" class="container curated-section">
+  <div class="section-header">
+    <div>
+      <span class="section-eyebrow">The best of</span>
+      <h2>{{ category.title }}</h2>
     </div>
-    <div class="grid carousel">
-      <app-card *ngFor="let movie of category.movies.slice(0, 7)" [movieTitle]="movie.Title" [tecaNota]="movie.tecaNota"></app-card>
-    </div>
-  </section>
+
+    <a class="show-more" [routerLink]="['/thebest', category.title]">
+      Show more <span>+</span>
+    </a>
+  </div>
+
+  <div class="grid carousel curated-carousel">
+    <app-card
+      *ngFor="let movie of category.movies.slice(0, 7)"
+      [movieTitle]="movie.Title"
+      [tecaNota]="movie.tecaNota">
+    </app-card>
+  </div>
+</section>
 
   <app-highlight [highlightTitles]="highlightTitles1"></app-highlight>
   <app-highlight [highlightTitles]="highlightTitles2"></app-highlight>
@@ -78,13 +100,24 @@ movieBgPoster="../../../assets/banner/flow-wallpapper.jpg"></app-banner>
   <!-- <app-banner movieTitle="Godzilla Minus One" movieBgPoster="../../../assets/banner/gojira.jpg"></app-banner> -->
 <!-- <app-banner movieTitle="Color Out of Space" movieBgPoster="https://image.tmdb.org/t/p/original/vj2gCvD5vZDJ865izTU0J0wJBVc.jpg"></app-banner> -->
 
-<section *ngFor="let category of categories.slice(7, 9)" class="container">
-  <div class="flex titles">
-    <h2><span class="category">The best of </span>{{ category.title }}</h2>
-    <a [routerLink]="['/thebest', category.title]"><h4>Show more +</h4></a>
+<section *ngFor="let category of categories.slice(7, 9)" class="container curated-section">
+  <div class="section-header">
+    <div>
+      <span class="section-eyebrow">The best of</span>
+      <h2>{{ category.title }}</h2>
+    </div>
+
+    <a class="show-more" [routerLink]="['/thebest', category.title]">
+      Show more <span>+</span>
+    </a>
   </div>
-  <div class="grid carousel">
-    <app-card *ngFor="let movie of category.movies.slice(0, 7)" [movieTitle]="movie.Title" [tecaNota]="movie.tecaNota"></app-card>
+
+  <div class="grid carousel curated-carousel">
+    <app-card
+      *ngFor="let movie of category.movies.slice(0, 7)"
+      [movieTitle]="movie.Title"
+      [tecaNota]="movie.tecaNota">
+    </app-card>
   </div>
 </section>
 

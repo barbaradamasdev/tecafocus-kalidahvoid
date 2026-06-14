@@ -2,11 +2,6 @@
   color: white;
 }
 
-section .titles {
-  justify-content: space-between;
-  align-items: center;
-}
-
 .carousel {
   margin-top: 15px;
   gap: 40px;
@@ -20,28 +15,6 @@ section .titles {
 
 h2 {
   text-transform: capitalize;
-}
-
-.carousel::-webkit-scrollbar {
-  width: 100%;
-  height: 7px;
-}
-
-.carousel::-webkit-scrollbar-thumb {
-  cursor: pointer;
-  background: linear-gradient(to right, #f3e6a3, #e2b353, #92661f);
-  border-radius: 10px;
-}
-
-.carousel::-webkit-scrollbar-track {
-  background-color: #f6f6f619;
-  border-radius: 10px;
-}
-
-.category {
-  color: #c48d33;
-  text-transform: uppercase;
-  font-size: 1.2rem;
 }
 
 section {
@@ -124,41 +97,90 @@ section {
 }
 
 .curated-section {
-  padding-top: 55px;
-  padding-bottom: 35px;
+  padding-top: 52px;
+  padding-bottom: 38px;
 }
 
 .section-header {
-  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 22px;
 }
 
 .section-eyebrow {
   display: block;
-  color: var(--gold);
-  font-size: 0.75rem;
-  letter-spacing: 2px;
+  color: #c48d33;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .section-header h2 {
   margin: 0;
-  font-size: 1.8rem;
-  text-transform: none;
+  color: #f7f3e8;
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
+  font-weight: 800;
+  line-height: 1;
+  text-transform: capitalize;
 }
 
 .show-more {
-  color: #cfcfcf;
-  font-size: 0.85rem;
+  color: #f5f5f5;
+  font-size: 0.95rem;
+  font-weight: 700;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.show-more span {
+  color: #d4af37;
 }
 
 .show-more:hover {
-  color: var(--gold);
+  color: #d4af37;
+  transform: translateX(4px);
 }
 
-.curated-carousel {
-  gap: 32px;
-  padding-bottom: 14px;
+.carousel {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: flex-start;
+  gap: 38px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  padding: 4px 2px 18px;
+}
+
+.curated-carousel::-webkit-scrollbar {
+  height: 4px;
+}
+
+.curated-carousel::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+}
+
+.curated-carousel::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    90deg,
+    #f4e6a2,
+    #d4af37,
+    #8a5f1f
+  );
+  border-radius: 999px;
+}
+
+.curated-carousel::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    90deg,
+    #fff0b8,
+    #e2b353,
+    #a77728
+  );
 }
