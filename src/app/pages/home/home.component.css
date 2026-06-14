@@ -23,16 +23,6 @@ section {
 }
 
 .breadcrumb {
-  gap: 8px;
-  padding-top: 0;
-  font-size: .9rem;
-}
-
-.breadcrumb > * {
-  color: grey;
-}
-
-.breadcrumb {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -40,11 +30,16 @@ section {
   font-size: 0.78rem;
 }
 
+.breadcrumb a,
+.breadcrumb span,
+.breadcrumb p {
+  margin: 0;
+  text-decoration: none;
+}
 
 .breadcrumb a {
   color: rgba(255, 255, 255, 0.55);
-  text-decoration: none;
-  transition: 0.25s ease;
+  transition: color 0.25s ease;
 }
 
 .breadcrumb a:hover {
@@ -53,7 +48,6 @@ section {
 
 .breadcrumb span,
 .breadcrumb p {
-  margin: 0;
   color: rgba(255, 255, 255, 0.32);
 }
 

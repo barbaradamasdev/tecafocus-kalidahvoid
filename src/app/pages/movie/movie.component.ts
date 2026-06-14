@@ -307,4 +307,10 @@ export class MovieComponent {
         this.selectedSeasonYear = this.selectedSeason.Episodes[0].Year;
     }
   }
+
+  capitalizeFirstLetter(str: string): string {
+    return str.split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(' ');
+  }
 }
