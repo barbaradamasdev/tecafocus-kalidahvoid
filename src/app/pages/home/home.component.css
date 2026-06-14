@@ -42,38 +42,46 @@ section {
   overscroll-behavior-x: contain;
   scroll-snap-type: x mandatory;
 }
+
 .categories {
-  margin: 15px 15px 0;
-  padding: 10px 0;
+  margin: 18px 0 0;
+  padding: 14px 0;
   overflow: hidden;
-  position: relative;
 }
 
-.category-wrapper {
+.category-scroll {
   display: flex;
-  animation: scrollButtons 120s linear infinite;
-  width: max-content;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  padding: 4px 24px;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
-.category-inner {
-  display: flex;
+.category-scroll::-webkit-scrollbar {
+  display: none;
 }
 
-.categories button {
-  opacity: 0.6;
-  background-color: black;
-  border: 1px solid #d4af37;
-  color: #d4af37;
-  margin: 0 5px;
-  transition: all 0.4s;
-  scroll-snap-align: start;
+.category-scroll button {
+  flex: 0 0 auto;
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(255, 255, 255, 0.066);
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 0.58rem;
+  font-weight: 300;
   white-space: nowrap;
+  opacity: 0.9;
+  transition: 0.25s ease;
 }
 
-.categories button:hover {
-  opacity: 1;
-  background-color: #d4af37;
-  color: black;
+.category-scroll button:hover {
+  color: #f5f5f5;
+  border-color: rgba(212, 175, 55, 0.65);
+  background: rgba(212, 175, 55, 0.12);
+  transform: translateY(-1px);
 }
 
 @keyframes scrollButtons {

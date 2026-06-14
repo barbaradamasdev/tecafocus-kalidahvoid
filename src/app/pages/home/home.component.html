@@ -6,21 +6,12 @@ movieBgPoster="../../../assets/banner/flow-wallpapper.jpg"></app-banner>
 <!-- <app-banner movieTitle="Interstellar" movieBgPoster="https://images.alphacoders.com/616/616438.jpg"></app-banner> -->
 
 <section class="categories">
-  <div class="category-wrapper">
-    <div class="category-inner">
-      <div *ngFor="let category of categories">
-        <button routerLink="/thebest/{{category.title}}">
-          {{ category.title }}
-        </button>
-      </div>
-    </div>
-    <div class="category-inner">
-      <div *ngFor="let category of categories">
-        <button routerLink="/thebest/{{category.title}}">
-          {{ category.title }}
-        </button>
-      </div>
-    </div>
+  <div class="category-scroll">
+    <button
+      *ngFor="let category of categories"
+      [routerLink]="['/thebest', category.title]">
+      {{ category.title }}
+    </button>
   </div>
 </section>
 
