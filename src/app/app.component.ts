@@ -12,14 +12,11 @@ import { FooterComponent } from "./components/footer/footer.component";
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
     imports: [
-        CommonModule,
-        RouterOutlet,
-        RouterLink,
-        HeaderComponent,
-        BannerComponent,
-        HomeComponent,
-        FooterComponent
-    ]
+    CommonModule,
+    RouterOutlet,
+    HeaderComponent,
+    FooterComponent
+]
 })
 export class AppComponent {
   title = 'Teca Focus - Database';

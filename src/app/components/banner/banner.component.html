@@ -9,9 +9,9 @@
     <h1>{{movieTitle}}</h1>
     <p>{{moviePlot}}</p>
     <ul class="flex">
+      <li class="rating">★ {{movieimdbRating}}</li>
       <li>{{movieRuntime | tempoDeFilme }}</li>
       <li>{{movieYear}}</li>
-      <li>{{movieimdbRating}}</li>
     </ul>
     <button [routerLink]="['/movie', movieTitle]">See more</button>
   </div>
@@ -19,14 +19,16 @@
 
 <ng-template #bookTemplate>
   <section
-    [ngClass]="{'main-banner': isMainBanner, 'banner': true}"
+    class="banner book-banner"
     [style.background]="movieBgPoster"
     [style]="backgroundStyle">
 
-    <div
-      class="container flex">
-      <h1>See the book section</h1>
-      <p>The best book curation (of the few I've read)</p>
+    <div class="container flex book-content">
+      <h1>Explore The Library</h1>
+      <p>
+        A curated collection of books, sci-fi worlds, unforgettable stories
+        and everything worth recommending.
+      </p>
       <button [routerLink]="['/books']">See more</button>
     </div>
   </section>

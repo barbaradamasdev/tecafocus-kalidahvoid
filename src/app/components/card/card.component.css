@@ -1,51 +1,68 @@
-img, img:after {
+img {
   width: 150px;
   height: 220px;
   object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  transition: all 0.3s;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  transition: transform .35s ease, filter .35s ease;
 }
 
 article {
+  position: relative;
+  max-width: 170px;
   margin: 20px auto;
   text-align: center;
-  position: relative;
-  max-width: 200px;
-  transition: all 0.3s ease;
-  background: rgba(0, 0, 0, 0.2);
-  border: 1px solid transparent;
-  border-radius: 10px;
-}
-
-article:hover {
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
-  border: 1px solid #c48d33;
-  background: rgba(139, 69, 19, 0.3);
+  background: transparent;
+  border: none;
 }
 
 article:hover img {
-  transform: scale(1.06);
-  padding-bottom: 5px;
+  transform: translateY(-4px);
 }
 
-article h3, article p {
+article h3,
+article p {
   transition: color 0.3s ease;
 }
 
-article:hover h3 {
+article:hover h3,
+article:hover .highlight {
   color: var(--gold);
 }
 
-h3,
-p {
-  text-transform: capitalize;
-  font-size: 0.9rem;
+.info {
+  padding-top: 6px;
+  padding-bottom: 10px;
 }
 
-p {
+.info h3 {
+  margin: 0 3px 6px;
+  color: #d8d8d8;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.info p {
+  margin: 0;
+  color: #9f9f9f;
   font-size: 0.8rem;
-  margin-top: 5px;
+  font-weight: 600;
+}
+
+.rating-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 5px;
+}
+
+.rating-star {
+  width: 13px;
+  height: 13px;
+  color: #f4e900;
+  flex-shrink: 0;
 }
 
 .info {
@@ -57,21 +74,54 @@ p {
 }
 
 .nota-teca {
-  flex-direction: column;
-  align-items: center;
   position: absolute;
-  top: -5%;
-  background-color: #c48d33;
-  color: black;
-  padding: 8px;
-  border-radius: 10px;
-  font-size: 0.8rem;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.63);
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 5px 7px 5px 9px;
+  border-radius: 999px;
+
+  background: rgba(5, 5, 5, 0.78);
+  border: 1px solid rgba(196, 141, 51, 0.85);
+  backdrop-filter: blur(6px);
+
+  color: #f3d27a;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.nota-teca span,
+.nota-teca strong {
+  margin: 0;
+  line-height: 1;
+}
+
+.nota-teca strong {
+  min-width: 20px;
+  padding: 4px 6px;
+  border-radius: 999px;
+
+  background: var(--gold);
+  color: #050505;
+
+  font-size: 0.7rem;
+  text-align: center;
 }
 
 .low-score {
+  border-color: rgb(145, 32, 32);
+  color: #f1d0d0;
+}
+
+.low-score strong {
   background: rgb(145, 32, 32);
-  color: rgb(197, 197, 197);
+  color: white;
 }
 
 .tooltip {
@@ -87,7 +137,7 @@ p {
   border-radius: 5px;
   padding: 5px;
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   top: 53%;
   left: 67%;
   margin-left: -100px;
@@ -103,8 +153,4 @@ p {
 
 .highlight {
   color: gray;
-}
-
-article:hover .highlight {
-  color: var(--gold);
 }

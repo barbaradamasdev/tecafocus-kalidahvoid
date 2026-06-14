@@ -1,7 +1,9 @@
 <header>
   <nav class="container flex">
-    <a routerLink="/home"><img class="logo" src="././assets/teca-logo-horizontal.png" alt=""></a>
-
+    <a routerLink="/home">
+      <!-- <img class="logo" src="assets/teca-logo-horizontal.png" alt="Teca Focus"> -->
+      <img class="logo" src="assets/kalidahvoidlogo.png" alt="Kalidah Void Teca Focus">
+    </a>
     <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" [(ngModel)]="isCheckboxChecked">
       <label for="openSidebarMenu" class="menu-hamburguer" (click)="checkCheckboxState()">
           <div class="spinner diagonal part-1"></div>
@@ -26,7 +28,7 @@
         <li><a (click)="closeMenu()" routerLink="/thebest">Curation</a></li>
         <li><a (click)="closeMenu()" routerLink="/books">Books</a></li>
         <li><a (click)="closeMenu()" routerLink="/games">Games</a></li>
-        <li><a (click)="closeMenu()" href="https://www.omdbapi.com/" target="blank">API OMDb</a></li>
+        <li><a (click)="closeMenu()" href="https://www.omdbapi.com/" target="blank">API</a></li>
       </ul>
     </div>
 

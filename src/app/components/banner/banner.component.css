@@ -1,62 +1,99 @@
 .banner {
   min-height: 400px;
+  padding-top: 90px;
   height: 25vw;
   color: white;
+  position: relative;
+  overflow: hidden;
+  background-size: cover !important;
+  background-position: center !important;
 }
 
-.main-banner {
-  min-height: 500px !important;
-}
-
-.main-banner > .container {
-  align-items: end;
-  text-align: right;
+.banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.55) 45%,
+      rgba(0, 0, 0, 0.15) 100%
+    );
+  z-index: 1;
 }
 
 .banner .container {
-  text-shadow: 1px 1px 2px black;
+  position: relative;
+  z-index: 2;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.9);
   height: 100%;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
+  align-items: flex-start;
+  text-align: left;
+  gap: 18px;
+}
+
+h1 {
+  font-size: clamp(3rem, 4vw, 6rem);
+  line-height: 1;
+  text-transform: capitalize;
+  letter-spacing: -2px;
+}
+
+.banner p {
+  max-width: 480px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.78);
 }
 
 ul {
   list-style: none;
-  gap: 20px;
+  font-size: 0.7rem;
+  gap: 12px;
 }
 
-h1 {
-  font-size: 2.4rem;
-  text-transform: capitalize;
-}
-
-button {
-  font-size: 1rem;
-  max-width: 150px;
-  padding: 10px 15px;
-}
-
-
-@media screen and (min-width: 600px) {
-  .banner p {
-    max-width: 40%;
-  }
+ul li {
+  color: #d4af37;
 }
 
 button {
-  text-transform: uppercase;
-  border-radius: 3px;
-  border: 2px solid #a3a3a3;
-  box-shadow: 5px 5px 0 0 #ffffff;
-  position: relative;
-  inset: 0;
-  transform: rotateX(0), rotateY(0) rotateZ(0);
-  transition: all 600ms ease;
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 6px;
+
+  transition: .3s ease;
 }
 
 button:hover {
-  inset: 3px 0 3px 0;
-  transform: rotateX(5deg) rotateY(3deg) rotateZ(.25deg);
-  box-shadow: none;
+  background: rgba(255,255,255,.1);
+  border-color: white;
 }
+
+.rating-star {
+  color: #d4af37;
+  font-weight: 600;
+}
+
+.book-banner .container {
+  align-items: center;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.book-banner h1 {
+  max-width: 520px;
+  font-size: clamp(2.8rem, 4.5vw, 4.2rem);
+}
+
+.book-banner p {
+  max-width: 520px;
+}
+
+.book-banner button {
+  align-self: center;
+}
+

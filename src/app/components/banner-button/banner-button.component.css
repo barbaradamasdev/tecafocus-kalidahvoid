@@ -1,36 +1,91 @@
-section {
-  background: url('https://stubbs.ca/wp-content/uploads/2015/02/tmn_bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 98vw;
-  height: 600px;
+.curation-cta {
+  min-height: 420px;
+  width: 100%;
+  margin-top: 80px;
+
+  display: flex;
   align-items: center;
   justify-content: center;
-}
 
-button a {
-  color: black !important;
-}
-
-button {
-  text-transform: uppercase;
-  border-radius: 3px;
-  border: 2px solid #a3a3a3;
-  box-shadow: 5px 5px 0 0 #ffffff;
   position: relative;
-  inset: 0;
-  transform: rotateX(0), rotateY(0) rotateZ(0);
-  transition: all 600ms ease;
-  cursor: pointer;
-  font-size: 0.8rem !important;
-  padding: 10px 20px !important;
-  background: var(--gold);
-  max-width: fit-content !important;
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.72),
+      rgba(0, 0, 0, 0.88)
+    ),
+    url('https://stubbs.ca/wp-content/uploads/2015/02/tmn_bg.jpg');
+
+  background-size: cover;
+  background-position: center;
 }
 
-button:hover {
+.curation-cta::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, transparent 0%, rgba(0, 0, 0, 0.75) 75%);
+}
+
+.curation-content {
+  position: relative;
+  z-index: 1;
+
+  max-width: 520px;
+  padding: 40px 24px;
+  text-align: center;
+  color: white;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 12px;
+
+  color: var(--gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.curation-content h2 {
+  margin-bottom: 12px;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.curation-content p {
+  margin-bottom: 28px;
+  color: #cfcfcf;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 13px 26px;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+
+  color: black !important;
+  background: var(--gold);
+
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+
+  transition: 0.25s ease;
+}
+
+.cta-button:hover {
   background: white;
-  inset: 3px 0 3px 0;
-  transform: rotateX(5deg) rotateY(3deg) rotateZ(.25deg);
-  box-shadow: none;
+  border-color: white;
+  transform: translateY(-3px);
 }
