@@ -21,14 +21,16 @@ export class BooksComponent {
 
   ngOnInit(): void {
     this.booksService.loadData().subscribe(() => {
-      this.books = this.booksService.books;
+    this.books = this.booksService.books;
 
-      if (this.books.length > 0) {
-        this.totalBooks = this.books.length;
-      } else {
-        this.books = [];
-        this.totalBooks = 0;
-      }
+    this.books.sort((a, b) => {
+      const notaA = typeof a.TecaNota === 'number' ? a.TecaNota : -1;
+      const notaB = typeof b.TecaNota === 'number' ? b.TecaNota : -1;
+
+      return notaB - notaA;
+    });
+
+    this.totalBooks = this.books.length;
     });
   }
 }

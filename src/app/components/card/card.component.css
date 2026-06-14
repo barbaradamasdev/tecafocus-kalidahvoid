@@ -93,6 +93,7 @@ p {
   margin-left: -100px;
   opacity: 0;
   transition: opacity 0.3s;
+  font-size: 12px;
 }
 
 .tooltip:hover .tooltiptext {

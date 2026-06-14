@@ -1,103 +1,33 @@
 [
   {
-    "title": "The Kite Runner",
-    "author": "Khaled Hosseini",
-    "genre": "Drama",
-    "synopsis": "An emotional tale of friendship, betrayal, and redemption set in Afghanistan before and after the Soviet invasion.",
-    "page_count": 372,
-    "year": 2003,
-    "image_url": "assets/books/the-kite-runner.jpg",
-    "TecaNota": 8
-  },
-  {
-    "title": "12 Rules for Life",
-    "author": "Jordan B. Peterson",
-    "genre": "Self-Help",
-    "synopsis": "A practical and philosophical guide to finding meaning in life and dealing with daily challenges.",
-    "page_count": 409,
-    "year": 2018,
-    "image_url": "assets/books/12 rules for life.jpg",
-    "TecaNota": 8
-  },
-  {
-    "title": "Verity",
-    "author": "Colleen Hoover",
-    "genre": "Psychological Thriller",
-    "synopsis": "A writer uncovers disturbing secrets while working on another author's biography.",
-    "page_count": 336,
-    "year": 2018,
-    "image_url": "assets/books/verity.jpg",
-    "TecaNota": 9
-  },
-  {
-    "title": "Planet of the Apes",
-    "author": "Pierre Boulle",
+    "title": "Death's End",
+    "author": "Liu Cixin",
     "genre": "Science Fiction",
-    "synopsis": "A science fiction classic exploring a society where apes dominate humans.",
-    "page_count": 256,
-    "year": 1963,
-    "image_url": "assets/books/planet of apes.jpg",
-    "TecaNota": 9.5
+    "release_year": 2010,
+    "page_count": 608,
+    "synopsis": "Spanning millions of years, humanity faces existential choices that will determine the fate of civilization, the solar system, and ultimately the universe itself.",
+    "image_url": "assets/books/deathsend.jpg",
+    "TecaNota": 180
   },
   {
-    "title": "I Am Legend",
-    "author": "Richard Matheson",
-    "genre": "Horror/Science Fiction",
-    "synopsis": "A man struggles to survive in a post-apocalyptic world overrun by vampires.",
-    "page_count": 160,
-    "year": 1954,
-    "image_url": "assets/books/i am legend.jpg",
-    "TecaNota": 9.5
-  },
-  {
-    "title": "Dark Matter",
-    "author": "Blake Crouch",
+    "title": "The Dark Forest",
+    "author": "Liu Cixin",
     "genre": "Science Fiction",
-    "synopsis": "A fascinating story about choices, parallel universes, and what truly matters in life.",
-    "page_count": 342,
-    "year": 2016,
-    "image_url": "assets/books/dark matter.jpg",
-    "TecaNota": 9.5
+    "release_year": 2008,
+    "page_count": 512,
+    "synopsis": "As the Trisolaran invasion approaches, humanity develops desperate strategies for survival while uncovering a terrifying truth about the universe known as the Dark Forest Theory.",
+    "image_url": "assets/books/darkforest.jpg",
+    "TecaNota": 150
   },
   {
     "title": "Recursion",
     "author": "Blake Crouch",
     "genre": "Science Fiction/Thriller",
-    "synopsis": "A journey that explores memory, time, and the implications of altering the past.",
-    "page_count": 336,
     "year": 2019,
+    "page_count": 336,
+    "synopsis": "A journey that explores memory, time, and the implications of altering the past.",
     "image_url": "assets/books/recursion.jpg",
-    "TecaNota": 10
-  },
-  {
-    "title": "2001: A Space Odyssey",
-    "author": "Arthur C. Clarke",
-    "genre": "Science Fiction",
-    "synopsis": "A groundbreaking tale of humanity's journey to the stars and the mysteries of a monolith influencing human evolution.",
-    "page_count": 297,
-    "year": 1968,
-    "image_url": "assets/books/2001 A Space Odyssey.jpg",
-    "TecaNota": "reading..."
-  },
-  {
-    "title": "The Gods Themselves",
-    "author": "Isaac Asimov",
-    "genre": "Science Fiction",
-    "synopsis": "A story about an energy transfer process that threatens to destroy Earth, involving humans and alien beings from another universe.",
-    "page_count": 288,
-    "year": 1972,
-    "image_url": "assets/books/The Gods Themselves.jpeg",
-    "TecaNota": "reading..."
-  },
-  {
-    "title": "Dracula",
-    "author": "Bram Stoker",
-    "genre": "Horror/Gothic",
-    "synopsis": "The classic tale of Count Dracula's attempt to spread his undead curse to Victorian England.",
-    "page_count": 418,
-    "year": 1897,
-    "image_url": "assets/books/dracula.jpg",
-    "TecaNota": "reading..."
+    "TecaNota": 98
   },
   {
     "title": "The Wonderful Wizard of Oz",
@@ -107,7 +37,7 @@
     "page_count": 272,
     "synopsis": "The story of Dorothy, a young girl transported to the magical land of Oz, who embarks on a journey to meet the Wizard and find her way home.",
     "image_url": "assets/books/oz.png",
-    "TecaNota": 10
+    "TecaNota": 95
   },
   {
     "title": "Les Misérables",
@@ -117,7 +47,7 @@
     "page_count": 1232,
     "synopsis": "A sweeping tale of redemption and justice, following the lives of Jean Valjean and other characters in 19th-century France.",
     "image_url": "assets/books/miserables.jpeg",
-    "TecaNota": 10
+    "TecaNota": 95
   },
   {
     "title": "Alice's Adventures in Wonderland",
@@ -127,7 +57,97 @@
     "page_count": 192,
     "synopsis": "The whimsical adventure of Alice, who falls into a rabbit hole and discovers a strange world filled with peculiar characters.",
     "image_url": "assets/books/alice.jpg",
-    "TecaNota": 10
+    "TecaNota": 93
+  },
+  {
+    "title": "The Three-Body Problem",
+    "author": "Liu Cixin",
+    "genre": "Science Fiction",
+    "release_year": 2008,
+    "page_count": 416,
+    "synopsis": "During China's Cultural Revolution, a secret project makes contact with an alien civilization, setting humanity on a collision course with forces beyond imagination.",
+    "image_url": "assets/books/3body.jpg",
+    "TecaNota": 110
+  },
+  {
+    "title": "Planet of the Apes",
+    "author": "Pierre Boulle",
+    "genre": "Science Fiction",
+    "year": 1963,
+    "page_count": 256,
+    "synopsis": "A science fiction classic exploring a society where apes dominate humans.",
+    "image_url": "assets/books/planet of apes.jpg",
+    "TecaNota": 97
+  },
+  {
+    "title": "I Am Legend",
+    "author": "Richard Matheson",
+    "genre": "Horror/Science Fiction",
+    "year": 1954,
+    "page_count": 160,
+    "synopsis": "A man struggles to survive in a post-apocalyptic world overrun by vampires.",
+    "image_url": "assets/books/i am legend.jpg",
+    "TecaNota": 96
+  },
+  {
+    "title": "Dark Matter",
+    "author": "Blake Crouch",
+    "genre": "Science Fiction",
+    "year": 2016,
+    "page_count": 342,
+    "synopsis": "A fascinating story about choices, parallel universes, and what truly matters in life.",
+    "image_url": "assets/books/dark matter.jpg",
+    "TecaNota": 96
+  },
+  {
+    "title": "Ugly Love",
+    "author": "Colleen Hoover",
+    "genre": "Contemporary Romance",
+    "release_year": 2014,
+    "page_count": 336,
+    "synopsis": "When Tate Collins and Miles Archer agree to a relationship with no strings attached, their arrangement becomes increasingly complicated as emotions and painful memories surface.",
+    "image_url": "assets/books/uglylove.jpg",
+    "TecaNota": 97
+  },
+  {
+    "title": "Still Beating",
+    "author": "Jennifer Hartmann",
+    "genre": "Dark Romance",
+    "release_year": 2020,
+    "page_count": 524,
+    "synopsis": "After surviving a traumatic kidnapping together, two people who once disliked each other must navigate healing, grief, and an unexpected connection forged through shared tragedy.",
+    "image_url": "assets/books/stillbeating.jpg",
+    "TecaNota": 95
+  },
+  {
+    "title": "Project Hail Mary",
+    "author": "Andy Weir",
+    "genre": "Science Fiction",
+    "year": 2021,
+    "page_count": 496,
+    "synopsis": "A lone astronaut awakens in deep space with no memory of his mission and discovers he may be humanity's last hope for survival.",
+    "image_url": "assets/books/hailmary.jpg",
+    "TecaNota": 100
+  },
+  {
+    "title": "Confess",
+    "author": "Colleen Hoover",
+    "genre": "Contemporary Romance",
+    "year": 2015,
+    "page_count": 320,
+    "synopsis": "Auburn Reed's carefully planned life is turned upside down when she meets Owen Gentry, an artist who transforms anonymous confessions into powerful works of art.",
+    "image_url": "assets/books/confess.jpg",
+    "TecaNota": 89
+  },
+  {
+    "title": "Verity",
+    "author": "Colleen Hoover",
+    "genre": "Psychological Thriller",
+    "year": 2018,
+    "page_count": 336,
+    "synopsis": "A writer uncovers disturbing secrets while working on another author's biography.",
+    "image_url": "assets/books/verity.jpg",
+    "TecaNota": 90
   },
   {
     "title": "Sem Asas ao Amanhecer",
@@ -137,6 +157,57 @@
     "page_count": 144,
     "synopsis": "A touching narrative about self-discovery and resilience in the face of life's challenges.",
     "image_url": "assets/books/semasas.jpg",
-    "TecaNota": 9
+    "TecaNota": 80
+  },
+  {
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "genre": "Drama",
+    "year": 2003,
+    "page_count": 372,
+    "synopsis": "An emotional tale of friendship, betrayal, and redemption set in Afghanistan before and after the Soviet invasion.",
+    "image_url": "assets/books/the-kite-runner.jpg",
+    "TecaNota": 82
+  },
+  {
+    "title": "12 Rules for Life",
+    "author": "Jordan B. Peterson",
+    "genre": "Self-Help",
+    "year": 2018,
+    "page_count": 409,
+    "synopsis": "A practical and philosophical guide to finding meaning in life and dealing with daily challenges.",
+    "image_url": "assets/books/12 rules for life.jpg",
+    "TecaNota": 80
+  },
+
+  {
+    "title": "2001: A Space Odyssey",
+    "author": "Arthur C. Clarke",
+    "genre": "Science Fiction",
+    "year": 1968,
+    "page_count": 297,
+    "synopsis": "A groundbreaking tale of humanity's journey to the stars and the mysteries of a monolith influencing human evolution.",
+    "image_url": "assets/books/2001 A Space Odyssey.jpg",
+    "TecaNota": "wishlist"
+  },
+  {
+    "title": "The Gods Themselves",
+    "author": "Isaac Asimov",
+    "genre": "Science Fiction",
+    "year": 1972,
+    "page_count": 288,
+    "synopsis": "A story about an energy transfer process that threatens to destroy Earth, involving humans and alien beings from another universe.",
+    "image_url": "assets/books/The Gods Themselves.jpeg",
+    "TecaNota": "wishlist"
+  },
+  {
+    "title": "Dracula",
+    "author": "Bram Stoker",
+    "genre": "Horror/Gothic",
+    "year": 1897,
+    "page_count": 418,
+    "synopsis": "The classic tale of Count Dracula's attempt to spread his undead curse to Victorian England.",
+    "image_url": "assets/books/dracula.jpg",
+    "TecaNota": "wishlist"
   }
 ]

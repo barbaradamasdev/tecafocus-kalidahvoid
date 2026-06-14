@@ -7,6 +7,6 @@
     <p class="total-movies">({{ totalBooks }})</p>
   </div>
   <div class="grid fullpage" >
-    <app-card *ngFor="let book of books" [bookTitle]="book?.title"></app-card>
+    <app-card *ngFor="let book of books" [bookTitle]="book?.title" [ngClass]="{ 'wishlist-book': book?.TecaNota === 'wishlist' }"></app-card>
   </div>
 </section>

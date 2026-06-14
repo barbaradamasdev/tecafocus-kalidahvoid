@@ -111,3 +111,14 @@ section {
     transform: translateX(-50%);
   }
 }
+
+.wishlist-book {
+  filter: grayscale(80%) saturate(60%);
+  opacity: 0.75;
+  transition: 0.3s ease;
+}
+
+.wishlist-book:hover {
+  filter: grayscale(30%) saturate(90%);
+  opacity: 1;
+}
