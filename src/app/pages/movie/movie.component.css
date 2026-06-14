@@ -3,21 +3,6 @@
   color: #f5f5f5;
 }
 
-.breadcrumb {
-  gap: 8px;
-  padding: 18px 0;
-  align-items: center;
-  font-size: 0.86rem;
-}
-
-.breadcrumb a,
-.breadcrumb span,
-.breadcrumb p {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.45);
-  text-decoration: none;
-}
-
 .movie-hero {
   min-height: 560px;
   background-size: cover;

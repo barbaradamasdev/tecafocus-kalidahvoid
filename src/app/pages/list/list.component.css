@@ -1,51 +1,79 @@
-@media screen and (max-width: 406px ) {
+
+
+
+.curated-page {
+  padding-top: 28px;
+  padding-bottom: 56px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 34px;
+}
+
+.section-label {
+  display: block;
+  color: rgba(212, 175, 55, 0.85);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.page-header h1 {
+  margin: 0;
+  color: #f7f3e8;
+  font-size: clamp(2.1rem, 5vw, 4rem);
+  font-weight: 900;
+  line-height: 0.95;
+  text-transform: capitalize;
+}
+
+.total-movies {
+  margin: 0 0 8px;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.fullpage {
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 42px 34px;
+  overflow: visible;
+}
+
+
+@media screen and (max-width: 406px) {
+  .page-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .section-label {
+    font-size: 0.58rem;
+    letter-spacing: 3px;
+  }
+
+  .page-header h1 {
+    font-size: 2.2rem;
+  }
+
+  .total-movies {
+    margin: 0;
+    font-size: 0.72rem;
+  }
+
   .fullpage {
     grid-template-columns: repeat(auto-fit, 137px);
     gap: 0;
     justify-content: space-between;
     overflow: hidden;
-  }
-
-  app-card {
-    transform: scale(0.9);
-    margin: -15px;
-  }
-
-  app-card ::ng-deep .nota-teca {
-    left: 20px;
-  }
-  app-card ::ng-deep .nota-teca > p {
-    display: none;
-  }
-
-  app-card ::ng-deep article img,
-  app-card ::ng-deep article img::after {
-    width: 100px !important;
-    height: 178px !important;
-    margin-bottom: 3px !important;
-  }
-
-  app-card ::ng-deep h3 {
-    font-size: 12px;
-  }
-
-  app-card ::ng-deep p {
-    font-size: 10px;
-  }
-
-  .carousel {
-    gap: 0;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 352px ) {
-  .fullpage {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .container {
-    padding: 20px 10px !important;
   }
 }
 

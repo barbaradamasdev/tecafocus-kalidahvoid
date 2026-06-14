@@ -1,15 +1,23 @@
-<div class="container flex breadcrumb">
+<div class="container breadcrumb">
   <a routerLink="/home">Home</a>
-  <p>></p>
-  <p>The best of {{capitalizeFirstLetter(breadcrumbName) }}</p>
+  <span>/</span>
+  <p>The best of {{ capitalizeFirstLetter(breadcrumbName) }}</p>
 </div>
 
-<section *ngIf="filteredMovies" class="container">
-  <div class="flex">
-    <h2><span class="category">The best of </span>{{ breadcrumbName }}</h2>
-    <p class="total-movies">({{ totalFilteredMovies }})</p>
-  </div>
-  <div class="grid fullpage" >
-    <app-card *ngFor="let movie of filteredMovies" [movieTitle]="movie?.Title"></app-card>
+<section *ngIf="filteredMovies" class="container curated-page">
+  <header class="page-header">
+    <div>
+      <span class="section-label">THE BEST OF</span>
+      <h1>{{ breadcrumbName }}</h1>
+    </div>
+
+    <p class="total-movies">{{ totalFilteredMovies }} titles</p>
+  </header>
+
+  <div class="grid fullpage">
+    <app-card
+      *ngFor="let movie of filteredMovies"
+      [movieTitle]="movie?.Title">
+    </app-card>
   </div>
 </section>

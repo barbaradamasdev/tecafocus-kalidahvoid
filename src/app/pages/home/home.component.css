@@ -32,6 +32,31 @@ section {
   color: grey;
 }
 
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-top: 28px;
+  font-size: 0.78rem;
+}
+
+
+.breadcrumb a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.breadcrumb a:hover {
+  color: #d4af37;
+}
+
+.breadcrumb span,
+.breadcrumb p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.32);
+}
+
 .fullpage {
   margin-top: 15px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -191,4 +216,39 @@ section {
     #e2b353,
     #a77728
   );
+}
+
+
+.titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+}
+
+.section-label {
+  display: block;
+  font-size: .7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(212,175,55,.8);
+  margin-bottom: 6px;
+}
+
+.titles h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1;
+  color: #f8f8f8;
+}
+
+.show-more {
+  text-decoration: none;
+  color: rgba(255,255,255,.7);
+  transition: .25s;
+}
+
+.show-more:hover {
+  color: #d4af37;
 }

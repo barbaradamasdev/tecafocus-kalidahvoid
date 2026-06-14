@@ -1,9 +1,17 @@
-<section class="container">
-  <div class="flex">
-    <h2><span class="category"></span>⭐ Hot Picks: Latest Curations</h2>
-    <p class="total-movies">({{ total }})</p>
-  </div>
-  <div class="grid fullpage" >
-    <app-card *ngFor="let movie of latestReleases" [movieTitle]="movie?.Title"></app-card>
+<section class="container curated-page">
+  <header class="page-header">
+    <div>
+      <span class="section-label">LATEST CURATIONS</span>
+      <h1>Hot Picks</h1>
+    </div>
+
+    <p class="total-movies">{{ total }} titles</p>
+  </header>
+
+  <div class="grid fullpage">
+    <app-card
+      *ngFor="let movie of latestReleases"
+      [movieTitle]="movie?.Title">
+    </app-card>
   </div>
 </section>
