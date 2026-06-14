@@ -26,13 +26,24 @@ movieBgPoster="../../../assets/banner/flow-wallpapper.jpg"></app-banner>
 
 <!-- <app-best-characters></app-best-characters> -->
 
-<section class="container">
-  <div class="flex titles">
-    <h2><span class="category"></span>⭐ Hot Picks: Latest Curations</h2>
-    <a [routerLink]="['/lastedreleases']"><h4>Show more +</h4></a>
+<section class="container curated-section">
+  <div class="flex titles section-header">
+    <div>
+      <span class="section-eyebrow">Latest curations</span>
+      <h2>Hot Picks</h2>
+    </div>
+
+    <a class="show-more" [routerLink]="['/lastedreleases']">
+      View all
+    </a>
   </div>
-  <div class="grid carousel">
-    <app-card *ngFor="let movie of latestReleases.slice(0, 7)" [movieTitle]="movie.Title" [tecaNota]="movie.tecaNota"></app-card>
+
+  <div class="grid carousel curated-carousel">
+    <app-card
+      *ngFor="let movie of latestReleases.slice(0, 7)"
+      [movieTitle]="movie.Title"
+      [tecaNota]="movie.tecaNota">
+    </app-card>
   </div>
 </section>
 

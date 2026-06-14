@@ -122,3 +122,43 @@ section {
   filter: grayscale(30%) saturate(90%);
   opacity: 1;
 }
+
+.curated-section {
+  padding-top: 55px;
+  padding-bottom: 35px;
+}
+
+.section-header {
+  margin-bottom: 18px;
+}
+
+.section-eyebrow {
+  display: block;
+  color: var(--gold);
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.section-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  text-transform: none;
+}
+
+.show-more {
+  color: #cfcfcf;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.show-more:hover {
+  color: var(--gold);
+}
+
+.curated-carousel {
+  gap: 32px;
+  padding-bottom: 14px;
+}
