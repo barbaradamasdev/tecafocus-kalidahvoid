@@ -1,57 +1,100 @@
- section {
-    height: 25vw;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-  }
+section {
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 4px;
 
-  section:hover {
-    transform: scale(1.02);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-  }
+  background-size: cover !important;
+  background-position: center !important;
 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.45);
+}
+
+section .container {
+  height: 100%;
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  text-align: left;
+  gap: 12px;
+
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.92) 0%,
+    rgba(0,0,0,.55) 40%,
+    rgba(0,0,0,.15) 100%
+  );
+}
+
+.category {
+  margin: 0;
+
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.content {
+  min-height: 120px;
+}
+
+h1 {
+  margin: 0;
+
+  color: white;
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+button {
+  margin-top: 8px;
+
+  border: 1px solid rgba(255,255,255,.15);
+  border-radius: 999px;
+
+  background: rgba(255,255,255,.08);
+  backdrop-filter: blur(8px);
+
+  color: white;
+
+  padding: 10px 22px;
+  font-size: .85rem;
+  font-weight: 600;
+
+  transition: .25s;
+}
+
+button:hover {
+  background: var(--gold);
+  color: black;
+  border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+@media screen and (max-width: 650px) {
   section .container {
-    height: 100%;
-    flex-direction: column;
-    justify-content: flex-end;
-    gap: 20px;
-    align-items: center;
-    text-align: center;
+    padding: 24px 18px;
   }
 
   .category {
-    color: #ffcc00;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-    text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   button {
-    font-size: 1rem;
-    max-width: 150px;
-    padding: 10px 15px;
-    color: white;
-    transition: transform 0.2s, background-color 0.2s;
+    font-size: 0.85rem;
+    padding: 10px 22px;
   }
-
-  button:hover {
-    background-color: #ecdfa9;
-    color: black;
-    transform: scale(1.1);
-    cursor: pointer;
 }
-
-  @media screen and (max-width: 650px) {
-    h1, .category {
-      font-size: 1rem;
-    }
-
-    button {
-      font-size: 14px;
-      padding: 8px 4px;
-    }
-
-    .container {
-      padding: 12px;
-    }
-  }
