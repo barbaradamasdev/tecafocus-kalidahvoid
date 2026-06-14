@@ -9,9 +9,9 @@
     <h1>{{movieTitle}}</h1>
     <p>{{moviePlot}}</p>
     <ul class="flex">
+      <li class="rating">★ {{movieimdbRating}}</li>
       <li>{{movieRuntime | tempoDeFilme }}</li>
       <li>{{movieYear}}</li>
-      <li>{{movieimdbRating}}</li>
     </ul>
     <button [routerLink]="['/movie', movieTitle]">See more</button>
   </div>

@@ -3,7 +3,7 @@
     "title": "2025",
     "movies": [
       {"Title":"American Primeval","imdbID":"tt24069848"},
-      { "Title": "Severance", "imdbID": "tt11280740" },
+      {"Title": "Severance", "imdbID": "tt11280740" },
       {"Title":"Sakamoto Days", "imdbID":"tt17069148"},
       {"Title":"Apple Cider Vinegar","Year":"2025","imdbID":"tt30428143"},
       {"Title":"Presence","imdbID":"tt28249919"},
