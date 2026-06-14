@@ -46,11 +46,6 @@ a::after {
   cursor: pointer;
 }
 
-li a:hover {
-  border-bottom: 2px solid gold !important;
-  padding-bottom: 6px;
-}
-
 input {
   padding: 7px;
   color: white !important;
