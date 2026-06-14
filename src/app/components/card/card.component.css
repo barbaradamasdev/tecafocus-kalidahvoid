@@ -4,7 +4,7 @@ img {
   object-fit: cover;
   border-radius: 6px;
   margin-bottom: 8px;
-  transition: transform 0.3s ease;
+  transition: transform .35s ease, filter .35s ease;
 }
 
 article {

@@ -1,45 +1,12 @@
-footer {
-  flex-direction: column;
-  justify-content: center;
-  gap: 40px;
-}
-
-.logo {
-  width: 250px;
-}
-
 .info-dev > *{
   font-size: .9rem;
   color: #c48d33;
   margin-top: 20px;
+  color: rgba(212, 175, 55, 0.55);
+  font-size: 0.75rem;
 }
 
 .info-dev {
   justify-content: center;
   margin-bottom: 40px;
-}
-
-nav {
-  justify-content: center;
-}
-
-.menu {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-@media screen and (min-width: 550px) {
-  footer {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-
-
-@media screen and (min-width: 750px) {
-  .menu {
-    flex-direction: row;
-  }
 }

@@ -1,5 +1,6 @@
 .banner {
   min-height: 400px;
+  padding-top: 90px;
   height: 25vw;
   color: white;
   position: relative;
@@ -35,15 +36,17 @@
 }
 
 h1 {
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(3rem, 4vw, 6rem);
   line-height: 1;
   text-transform: capitalize;
+  letter-spacing: -2px;
 }
 
 .banner p {
   max-width: 480px;
   font-size: 0.8rem;
   line-height: 1.5;
+  color: rgba(255, 255, 255, 0.78);
 }
 
 ul {
@@ -93,3 +96,4 @@ button:hover {
 .book-banner button {
   align-self: center;
 }
+

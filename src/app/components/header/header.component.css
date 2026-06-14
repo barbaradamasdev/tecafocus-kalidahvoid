@@ -1,12 +1,9 @@
 header {
-  position: sticky;
-  top: 0;
-  z-index: 990;
-  background: rgba(0, 0, 0, 0.88);
+  position: relative;
+  z-index: 2000;
+  background: rgba(0, 0, 0, 0.82);
   backdrop-filter: blur(14px);
-  border-bottom: 1px solid rgba(212, 175, 55, 0.16);
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45);
-  color: white;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.08);
 }
 
 nav {
@@ -23,9 +20,9 @@ nav .logo {
 
 #sidebarMenu {
   flex: 1;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 
 .menu {
@@ -38,7 +35,7 @@ nav .logo {
   position: relative;
   color: rgba(255, 255, 255, 0.62);
   text-decoration: none;
-  font-size: 0.94rem;
+  font-size: 0.74rem !important;
   font-weight: 600;
   letter-spacing: 0.02em;
   transition: color 0.28s ease, transform 0.28s ease;
@@ -72,50 +69,55 @@ nav .logo {
 
 .search {
   position: relative;
-  width: clamp(190px, 24vw, 300px);
+  width: 44px;
+  height: 44px;
+  transition: width 0.35s ease;
+}
+
+.search:hover,
+.search:focus-within {
+  width: clamp(190px, 22vw, 280px);
 }
 
 .search input {
   width: 100%;
-  height: 38px;
+  height: 44px;
   border: 1px solid transparent;
   border-radius: 999px;
   padding: 0 42px 0 18px;
-  background: rgba(255, 255, 255, 0.032);
+  background: rgba(255, 255, 255, 0.035);
   color: white;
   outline: none;
-  transition: 0.28s ease;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.search:hover input,
+.search:focus-within input {
+  opacity: 1;
+  cursor: text;
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .search input::placeholder {
   color: rgba(255, 255, 255, 0.32);
 }
 
-.search input:hover {
-  background: rgba(255, 255, 255, 0.065);
-}
-
-.search input:focus {
-  width: 100%;
-  border-color: rgba(212, 175, 55, 0.28);
-  background: rgba(255, 255, 255, 0.075);
-  box-shadow: none;
-}
-
 .search .btn-icon {
   position: absolute;
   right: -10px;
-  top: 50%;
+  top: 55%;
   transform: translateY(-50%);
   border: 0;
   background: transparent;
-  color: rgba(255, 255, 255, 0.38);
+  color: rgba(255, 255, 255, 0.45);
   cursor: pointer;
   transition: 0.25s ease;
 }
 
-.search:focus-within .btn-icon,
-.search .btn-icon:hover {
+.search:hover .btn-icon,
+.search:focus-within .btn-icon {
   color: rgba(212, 175, 55, 0.85);
 }
 
@@ -185,7 +187,7 @@ nav .logo {
   }
 
   .menu a {
-    font-size: 0.88rem;
+    font-size: 0.78rem;
   }
 
   .search {
@@ -197,8 +199,34 @@ nav .logo {
 @media screen and (max-width: 767px) {
   header {
     position: fixed;
+    top: 0;
     right: 0;
     left: 0;
+    z-index: 3000;
+  }
+
+  #sidebarMenu {
+    position: fixed;
+    top: 92px;
+    right: 0;
+    left: 0;
+    z-index: 2999;
+    width: 100%;
+    height: calc(100vh - 92px);
+    padding: 32px 24px;
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.98)),
+      radial-gradient(circle at top, rgba(212, 175, 55, 0.16), transparent 42%);
+    flex-direction: column-reverse;
+    justify-content: end;
+    gap: 34px;
+    transform: translateX(100%);
+    transition: transform 0.35s ease;
+  }
+
+  .menu-hamburguer {
+    display: block;
+    z-index: 3001;
   }
 
   .wrapper {
@@ -225,7 +253,7 @@ nav .logo {
       linear-gradient(rgba(0, 0, 0, 0.94), rgba(0, 0, 0, 0.98)),
       radial-gradient(circle at top, rgba(212, 175, 55, 0.16), transparent 42%);
     flex-direction: column-reverse;
-    justify-content: flex-end;
+    justify-content: end;
     gap: 34px;
     transform: translateX(100%);
     transition: transform 0.35s ease;
@@ -235,8 +263,21 @@ nav .logo {
     transform: translateX(0);
   }
 
-  .search {
-    width: min(100%, 360px);
+  .search,
+  .search:hover,
+  .search:focus-within {
+    width: min(100%, 320px);
+    height: auto;
+  }
+
+  .search input {
+    height: 38px;
+    opacity: 1;
+    cursor: text;
+  }
+
+  .search .btn-icon {
+    right: -10px;
   }
 
   .menu {
