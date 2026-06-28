@@ -26,8 +26,13 @@
 
 <ng-template #bookTemplate>
   <div class="tooltip">
-  <article *ngIf="isBook; else gameTemplate">
-        <img (error)="setDefaultPoster($event)" [src]="bookImageUrl" alt="Capa do livro">
+    <article *ngIf="isBook; else gameTemplate">
+      <a [routerLink]="['/book', bookTitle]">
+        <img
+          (error)="setDefaultPoster($event)"
+          [src]="bookImageUrl"
+          alt="Capa do livro">
+
         <div>
           <div
             *ngIf="tecaNota !== null && tecaNota !== undefined"
@@ -36,14 +41,18 @@
             <span>Teca</span>
             <strong>{{ tecaNota }}</strong>
           </div>
+
           <div class="info">
             <h3>{{ bookTitle }}</h3>
             <p>Autor: {{ bookAuthor }}</p>
             <p>Gênero: {{ bookGenre }}</p>
-            <p>Ano: {{ bookYear }}</p>
             <p>Páginas: {{ bookPageCount }}</p>
+            <p>Ano: {{ bookYear }}</p>
+            <p *ngIf="bookReadingDate"> Lido em: {{ bookReadingDate }} </p>
           </div>
         </div>
+      </a>
+
       <span class="tooltiptext">{{ bookSynopsis }}</span>
     </article>
   </div>

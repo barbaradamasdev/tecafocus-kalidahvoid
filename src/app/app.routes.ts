@@ -7,10 +7,12 @@ import { SearchComponent } from './pages/search/search.component';
 import { BooksComponent } from './pages/books/books.component';
 import { GamesComponent } from './pages/games/games.component.';
 import { LastedReleasesComponent } from './pages/lastedreleases/lastedreleases.component';
+import { BookComponent } from './pages/book/book.component';
 
 export const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'movie/:movieTitle', component: MovieComponent },
+  {path: 'book/:bookTitle', component: BookComponent },
   {path: 'thebest', component: CurationComponent},
 
   {path: 'search/:searchTitle', component: SearchComponent },

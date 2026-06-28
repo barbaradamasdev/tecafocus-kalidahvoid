@@ -7,7 +7,9 @@
     "page_count": 608,
     "synopsis": "Spanning millions of years, humanity faces existential choices that will determine the fate of civilization, the solar system, and ultimately the universe itself.",
     "image_url": "assets/books/deathsend.jpg",
-    "TecaNota": 180
+    "TecaNota": 180,
+    "TecaReview": "Se A Floresta Sombria parecia impossível de superar, O Fim da Morte provou que eu estava completamente errado. Este livro representa o auge da trilogia e, na minha opinião, é a melhor obra de Cixin Liu.\n\nAlém das ideias científicas absolutamente impressionantes, o livro adiciona uma carga emocional muito maior à história. Cheng Xin e Yun Tianming se tornaram personagens inesquecíveis, e toda a relação construída entre eles traz uma humanidade que torna os acontecimentos ainda mais impactantes.\n\nA cada capítulo a escala da narrativa continua aumentando, mas nunca perde o foco nas consequências humanas de decisões que afetam civilizações inteiras. Poucos livros conseguem equilibrar conceitos científicos tão grandiosos com momentos tão emocionantes.\n\nMais do que uma história sobre alienígenas ou sobrevivência, O Fim da Morte é uma reflexão sobre tempo, amor, escolhas, evolução das civilizações e sobre o quão pequena a humanidade realmente é diante da imensidão do universo.\n\nFoi uma leitura que continuou comigo muito tempo depois da última página. Para mim, é o ponto máximo da trilogia e uma das melhores obras de ficção científica já escritas.",
+    "reading_date": "2026-05"
   },
   {
     "title": "The Dark Forest",
@@ -17,17 +19,32 @@
     "page_count": 512,
     "synopsis": "As the Trisolaran invasion approaches, humanity develops desperate strategies for survival while uncovering a terrifying truth about the universe known as the Dark Forest Theory.",
     "image_url": "assets/books/darkforest.jpg",
-    "TecaNota": 150
+    "TecaNota": 150,
+    "TecaReview": "Eu já imaginava que seria difícil superar The Three-Body Problem, mas Cixin Liu conseguiu fazer exatamente isso. A Floresta Sombria pega tudo o que funcionava no primeiro livro e amplia a escala, a tensão e as consequências de uma maneira impressionante.\n\nO Projeto dos Wallfacers é, sem exagero, um dos conceitos mais brilhantes que já encontrei na ficção científica. A ideia de transformar estratégia, psicologia e planejamento em armas contra uma civilização infinitamente superior é fascinante.\n\nFoi também nesse livro que conheci dois dos meus personagens favoritos de toda a ficção científica: Luo Ji e Zhang Beihai. Ambos representam formas completamente diferentes de enfrentar uma crise impossível, e acompanhar suas decisões foi um dos pontos altos da trilogia.\n\nA sensação durante toda a leitura é de que a história nunca para de crescer. Cada revelação aumenta ainda mais a escala do universo criado por Cixin Liu, tornando tudo mais inteligente, mais ambicioso e mais surpreendente.\n\nPara mim, conseguiu superar um livro que eu já considerava praticamente perfeito, algo extremamente raro.",
+    "reading_date": "2026-04"
+  },
+  {
+    "title": "The Three-Body Problem",
+    "author": "Liu Cixin",
+    "genre": "Science Fiction",
+    "release_year": 2008,
+    "page_count": 416,
+    "synopsis": "Durante a Revolução Cultural Chinesa, um projeto secreto estabelece contato com uma civilização alienígena, colocando a humanidade em rota de colisão com forças muito além de sua compreensão.",
+    "image_url": "assets/books/3body.jpg",
+    "TecaNota": 110,
+    "TecaReview": "Foi um daqueles livros que mudaram completamente minha forma de enxergar a ficção científica. Mesmo já conhecendo a história por meio das adaptações, a experiência da leitura conseguiu me surpreender em praticamente todos os momentos.\n\nO começo pode parecer um pouco mais lento e técnico, mas cada capítulo adiciona uma peça importante ao quebra-cabeça. Quando tudo começa a se conectar, a sensação é de estar diante de uma ideia gigantesca, muito maior do que qualquer expectativa que eu tinha.\n\nO que mais me impressionou foi a forma como Cixin Liu mistura ciência, filosofia e o conceito de primeiro contato sem transformar a história em algo inacessível. É uma ficção científica que faz o leitor pensar constantemente sobre a posição da humanidade no universo.\n\nFoi uma das experiências de leitura mais incríveis que já tive. Depois de terminar, meu antigo livro favorito de ficção científica passou automaticamente para o segundo lugar. Pouquíssimos livros conseguem provocar esse tipo de impacto.\n\nUma obra obrigatória para qualquer pessoa que goste de ficção científica baseada em grandes ideias.",
+    "reading_date": "2026-04"
   },
   {
     "title": "Recursion",
     "author": "Blake Crouch",
     "genre": "Science Fiction/Thriller",
-    "year": 2019,
+    "release_year": 2019,
     "page_count": 336,
     "synopsis": "A journey that explores memory, time, and the implications of altering the past.",
     "image_url": "assets/books/recursion.jpg",
-    "TecaNota": 98
+    "TecaNota": 98,
+    "reading_date": "2024-07"
   },
   {
     "title": "The Wonderful Wizard of Oz",
@@ -60,20 +77,10 @@
     "TecaNota": 93
   },
   {
-    "title": "The Three-Body Problem",
-    "author": "Liu Cixin",
-    "genre": "Science Fiction",
-    "release_year": 2008,
-    "page_count": 416,
-    "synopsis": "During China's Cultural Revolution, a secret project makes contact with an alien civilization, setting humanity on a collision course with forces beyond imagination.",
-    "image_url": "assets/books/3body.jpg",
-    "TecaNota": 110
-  },
-  {
     "title": "Planet of the Apes",
     "author": "Pierre Boulle",
     "genre": "Science Fiction",
-    "year": 1963,
+    "release_year": 1963,
     "page_count": 256,
     "synopsis": "A science fiction classic exploring a society where apes dominate humans.",
     "image_url": "assets/books/planet of apes.jpg",
@@ -83,7 +90,7 @@
     "title": "I Am Legend",
     "author": "Richard Matheson",
     "genre": "Horror/Science Fiction",
-    "year": 1954,
+    "release_year": 1954,
     "page_count": 160,
     "synopsis": "A man struggles to survive in a post-apocalyptic world overrun by vampires.",
     "image_url": "assets/books/i am legend.jpg",
@@ -93,11 +100,12 @@
     "title": "Dark Matter",
     "author": "Blake Crouch",
     "genre": "Science Fiction",
-    "year": 2016,
+    "release_year": 2016,
     "page_count": 342,
     "synopsis": "A fascinating story about choices, parallel universes, and what truly matters in life.",
     "image_url": "assets/books/dark matter.jpg",
-    "TecaNota": 96
+    "TecaNota": 96,
+    "reading_date": "2024-05"
   },
   {
     "title": "Ugly Love",
@@ -107,7 +115,8 @@
     "page_count": 336,
     "synopsis": "When Tate Collins and Miles Archer agree to a relationship with no strings attached, their arrangement becomes increasingly complicated as emotions and painful memories surface.",
     "image_url": "assets/books/uglylove.jpg",
-    "TecaNota": 97
+    "TecaNota": 97,
+    "reading_date": "2026-01"
   },
   {
     "title": "Still Beating",
@@ -117,33 +126,36 @@
     "page_count": 524,
     "synopsis": "After surviving a traumatic kidnapping together, two people who once disliked each other must navigate healing, grief, and an unexpected connection forged through shared tragedy.",
     "image_url": "assets/books/stillbeating.jpg",
-    "TecaNota": 95
+    "TecaNota": 95,
+    "reading_date": "2026-02"
   },
   {
     "title": "Project Hail Mary",
     "author": "Andy Weir",
     "genre": "Science Fiction",
-    "year": 2021,
+    "release_year": 2021,
     "page_count": 496,
     "synopsis": "A lone astronaut awakens in deep space with no memory of his mission and discovers he may be humanity's last hope for survival.",
     "image_url": "assets/books/hailmary.jpg",
-    "TecaNota": 100
+    "TecaNota": 100,
+    "reading_date": "2026-03"
   },
   {
     "title": "Confess",
     "author": "Colleen Hoover",
     "genre": "Contemporary Romance",
-    "year": 2015,
+    "release_year": 2015,
     "page_count": 320,
     "synopsis": "Auburn Reed's carefully planned life is turned upside down when she meets Owen Gentry, an artist who transforms anonymous confessions into powerful works of art.",
     "image_url": "assets/books/confess.jpg",
-    "TecaNota": 89
+    "TecaNota": 89,
+    "reading_date": "2025-12"
   },
   {
     "title": "Verity",
     "author": "Colleen Hoover",
     "genre": "Psychological Thriller",
-    "year": 2018,
+    "release_year": 2018,
     "page_count": 336,
     "synopsis": "A writer uncovers disturbing secrets while working on another author's biography.",
     "image_url": "assets/books/verity.jpg",
@@ -163,7 +175,7 @@
     "title": "The Kite Runner",
     "author": "Khaled Hosseini",
     "genre": "Drama",
-    "year": 2003,
+    "release_year": 2003,
     "page_count": 372,
     "synopsis": "An emotional tale of friendship, betrayal, and redemption set in Afghanistan before and after the Soviet invasion.",
     "image_url": "assets/books/the-kite-runner.jpg",
@@ -173,41 +185,42 @@
     "title": "12 Rules for Life",
     "author": "Jordan B. Peterson",
     "genre": "Self-Help",
-    "year": 2018,
+    "release_year": 2018,
     "page_count": 409,
     "synopsis": "A practical and philosophical guide to finding meaning in life and dealing with daily challenges.",
     "image_url": "assets/books/12 rules for life.jpg",
     "TecaNota": 80
   },
-
   {
     "title": "2001: A Space Odyssey",
     "author": "Arthur C. Clarke",
     "genre": "Science Fiction",
-    "year": 1968,
+    "release_year": 1968,
     "page_count": 297,
     "synopsis": "A groundbreaking tale of humanity's journey to the stars and the mysteries of a monolith influencing human evolution.",
     "image_url": "assets/books/2001 A Space Odyssey.jpg",
     "TecaNota": "wishlist"
   },
   {
-    "title": "The Gods Themselves",
-    "author": "Isaac Asimov",
-    "genre": "Science Fiction",
-    "year": 1972,
-    "page_count": 288,
-    "synopsis": "A story about an energy transfer process that threatens to destroy Earth, involving humans and alien beings from another universe.",
-    "image_url": "assets/books/The Gods Themselves.jpeg",
-    "TecaNota": "wishlist"
-  },
-  {
     "title": "Dracula",
     "author": "Bram Stoker",
     "genre": "Horror/Gothic",
-    "year": 1897,
+    "release_year": 1897,
     "page_count": 418,
     "synopsis": "The classic tale of Count Dracula's attempt to spread his undead curse to Victorian England.",
     "image_url": "assets/books/dracula.jpg",
     "TecaNota": "wishlist"
+  },
+  {
+    "title": "The Gods Themselves",
+    "author": "Isaac Asimov",
+    "genre": "Hard Science Fiction",
+    "release_year": 1972,
+    "page_count": 288,
+    "synopsis": "When humanity discovers an apparently limitless source of clean energy, only a few scientists question its true cost. Their search for the truth uncovers a connection between parallel universes, forcing humans and an extraordinary alien civilization to confront a catastrophe that could destroy both realities.",
+    "image_url": "assets/books/the-gods-themselves.jpg",
+    "TecaNota": 70,
+    "TecaReview": "Cara... o que dizer desse livro?\n\nPor ser um livro de Asimov e um verdadeiro clássico da ficção científica, criei expectativas enormes. Infelizmente, a experiência acabou sendo bem diferente do que eu imaginava. Não acho que seja um livro ruim — muito pelo contrário. Mas foi uma leitura complicada e, só depois de pesquisar sobre a obra, consegui entender melhor por que ela é tão valorizada.\n\n(Spoilers leves a partir daqui.)\n\nO primeiro capítulo me conquistou completamente. Lamont e sua busca incessante pela verdade são fascinantes, e a história cresce até um ponto de deixar qualquer leitor eufórico.\n\nNo segundo capítulo, porém, fui completamente jogada em um universo novo. Asimov não explica nada; ele simplesmente espera que você descubra sozinho como aquela sociedade alienígena funciona. Depois de um tempo passei a gostar dessa proposta, embora não seja minha forma favorita de conhecer um mundo novo.\n\nAinda assim, essa foi, de longe, a melhor parte do livro. Os personagens são fascinantes, a construção daquela civilização é extremamente original e a divisão da narrativa entre os três protagonistas ficou fantástica. O problema veio justamente no final: terminei o capítulo esperando respostas que nunca chegaram. Depois descobri que essa sensação também é bastante comum entre outros leitores.\n\nNo último capítulo voltamos aos humanos e, com cerca de 90% da leitura concluída, eu só conseguia pensar em como Asimov faria todas aquelas ideias se conectarem. Para minha surpresa, ele simplesmente... não conecta da forma que eu esperava. A história termina de maneira muito abrupta e me deixou com uma forte sensação de que faltavam páginas.\n\nMinha impressão foi a de que Asimov teve várias ideias brilhantes, reuniu todas no mesmo livro, mas não deu às histórias um encerramento à altura do que construiu. Como leitora, foi impossível terminar satisfeita. Confesso que essa experiência até me deixou receosa de explorar outros livros dele.\n\nApesar disso, entendo perfeitamente por que a obra recebeu tantos prêmios. A criatividade é impressionante, especialmente considerando a época em que foi escrita. Depois de pesquisar, descobri que Asimov escreveu este romance como resposta às críticas de que criava personagens frios, alienígenas humanos demais e pouca exploração das relações pessoais. De fato, ele respondeu a tudo isso aqui. Além disso, a crítica à vaidade científica e à política no meio acadêmico continua extremamente atual.\n\n“Contra a estupidez, os próprios deuses lutam em vão.”",
+    "reading_date": "2026-06"
   }
 ]

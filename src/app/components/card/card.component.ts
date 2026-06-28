@@ -28,6 +28,7 @@ export class CardComponent implements OnInit  {
   @Input() bookImageUrl: string = '';
   @Input() bookYear: number = 0;
   @Input() bookPageCount: number = 0;
+  @Input() bookReadingDate: string = '';
   @Input() bookSynopsis: string = '';
 
   @Input() gameTitle: string = '';
@@ -105,8 +106,10 @@ export class CardComponent implements OnInit  {
     this.bookImageUrl = (bookDetails?.image_url && bookDetails.image_url !== 'N/A')
       ? bookDetails.image_url
       : this.defaultPoster;
-    this.bookYear = bookDetails.year;
+    this.bookYear = bookDetails.release_year;
     this.bookPageCount = bookDetails.page_count;
+    const [year, month] = bookDetails.reading_date.split('-');
+    this.bookReadingDate = year;
     this.bookSynopsis = bookDetails.synopsis;
     this.tecaNota = bookDetails.TecaNota;
   }

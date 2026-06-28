@@ -1,0 +1,48 @@
+<div class="container flex breadcrumb">
+  <a routerLink="/home">Home</a>
+  <span>/</span>
+  <a routerLink="/books">Books</a>
+  <span>/</span>
+  <p>{{ book?.title }}</p>
+</div>
+
+<section class="book-hero" *ngIf="book">
+  <div class="container book-hero-content">
+    <img
+      class="book-cover"
+      [src]="book.image_url"
+      (error)="setDefaultPoster($event)"
+      alt="Cover of {{ book.title }}">
+
+    <div class="book-info">
+      <span class="eyebrow">Kalidah Atlas</span>
+      <h1>{{ book.title }}</h1>
+
+      <div class="meta">
+        <span>{{ book.author }}</span>
+        <span>{{ book.genre }}</span>
+        <span>{{ book.page_count }} pages</span>
+        <span>Published: {{ book.release_year }}</span>
+        <span *ngIf="book.reading_date">
+          Read: {{ formatReadingDate(book.reading_date) }}
+        </span>
+      </div>
+
+      <p class="synopsis">{{ book.synopsis }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="container teca-section" *ngIf="book">
+  <div
+    class="teca-score"
+    [ngClass]="{'low-score': +book.TecaNota <= 50}">
+    <span>Teca Review</span>
+    <strong>{{ book.TecaNota }}</strong>
+  </div>
+
+  <div class="teca-card" *ngIf="book.TecaReview">
+    <h3>Teca Comments</h3>
+    <p>{{ book.TecaReview }}</p>
+  </div>
+</section>
