@@ -108,8 +108,12 @@ export class CardComponent implements OnInit  {
       : this.defaultPoster;
     this.bookYear = bookDetails.release_year;
     this.bookPageCount = bookDetails.page_count;
-    const [year, month] = bookDetails.reading_date.split('-');
+    if (bookDetails.reading_date) {
+    const [year] = bookDetails.reading_date.split('-');
     this.bookReadingDate = year;
+  } else {
+    this.bookReadingDate = '';
+  }
     this.bookSynopsis = bookDetails.synopsis;
     this.tecaNota = bookDetails.TecaNota;
   }
