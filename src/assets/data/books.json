@@ -121,7 +121,7 @@
   {
     "title": "Still Beating",
     "author": "Jennifer Hartmann",
-    "genre": "Dark Romance",
+    "genre": "Romance",
     "release_year": 2020,
     "page_count": 524,
     "synopsis": "After surviving a traumatic kidnapping together, two people who once disliked each other must navigate healing, grief, and an unexpected connection forged through shared tragedy.",
@@ -222,5 +222,60 @@
     "TecaNota": 70,
     "TecaReview": "Cara... o que dizer desse livro?\n\nPor ser um livro de Asimov e um verdadeiro clássico da ficção científica, criei expectativas enormes. Infelizmente, a experiência acabou sendo bem diferente do que eu imaginava. Não acho que seja um livro ruim — muito pelo contrário. Mas foi uma leitura complicada e, só depois de pesquisar sobre a obra, consegui entender melhor por que ela é tão valorizada.\n\n(Spoilers leves a partir daqui.)\n\nO primeiro capítulo me conquistou completamente. Lamont e sua busca incessante pela verdade são fascinantes, e a história cresce até um ponto de deixar qualquer leitor eufórico.\n\nNo segundo capítulo, porém, fui completamente jogada em um universo novo. Asimov não explica nada; ele simplesmente espera que você descubra sozinho como aquela sociedade alienígena funciona. Depois de um tempo passei a gostar dessa proposta, embora não seja minha forma favorita de conhecer um mundo novo.\n\nAinda assim, essa foi, de longe, a melhor parte do livro. Os personagens são fascinantes, a construção daquela civilização é extremamente original e a divisão da narrativa entre os três protagonistas ficou fantástica. O problema veio justamente no final: terminei o capítulo esperando respostas que nunca chegaram. Depois descobri que essa sensação também é bastante comum entre outros leitores.\n\nNo último capítulo voltamos aos humanos e, com cerca de 90% da leitura concluída, eu só conseguia pensar em como Asimov faria todas aquelas ideias se conectarem. Para minha surpresa, ele simplesmente... não conecta da forma que eu esperava. A história termina de maneira muito abrupta e me deixou com uma forte sensação de que faltavam páginas.\n\nMinha impressão foi a de que Asimov teve várias ideias brilhantes, reuniu todas no mesmo livro, mas não deu às histórias um encerramento à altura do que construiu. Como leitora, foi impossível terminar satisfeita. Confesso que essa experiência até me deixou receosa de explorar outros livros dele.\n\nApesar disso, entendo perfeitamente por que a obra recebeu tantos prêmios. A criatividade é impressionante, especialmente considerando a época em que foi escrita. Depois de pesquisar, descobri que Asimov escreveu este romance como resposta às críticas de que criava personagens frios, alienígenas humanos demais e pouca exploração das relações pessoais. De fato, ele respondeu a tudo isso aqui. Além disso, a crítica à vaidade científica e à política no meio acadêmico continua extremamente atual.\n\n“Contra a estupidez, os próprios deuses lutam em vão.”",
     "reading_date": "2026-06"
+  },
+  {
+    "title": "O Massacre da Família Hope",
+    "author": "Riley Sager",
+    "genre": "Psychological Thriller",
+    "release_year": 2023,
+    "page_count": 400,
+    "synopsis": "Kit McDeere becomes the caregiver of Lenora Hope, the woman long suspected of murdering her family decades earlier. As Lenora begins to reveal her version of the story, old secrets and new dangers emerge.",
+    "image_url": "assets/books/massacre_hope.jpg",
+    "TecaNota": 50,
+    "reading_date": "2026-09-15"
+  },
+  {
+    "title": "Love, Theoretically",
+    "author": "Ali Hazelwood",
+    "genre": "Contemporary Romance",
+    "release_year": 2023,
+    "page_count": 400,
+    "synopsis": "Theoretical physicist Elsie Hannaway balances academia with a side job as a fake girlfriend until she clashes with experimental physicist Jack Smith, whose presence threatens both her career plans and her carefully constructed life.",
+    "image_url": "assets/books/love-theoretically.jpg",
+    "TecaNota": 50,
+    "reading_date": "2026-09-09"
+  },
+  {
+    "title": "The Love Hypothesis",
+    "author": "Ali Hazelwood",
+    "genre": "Contemporary Romance",
+    "release_year": 2021,
+    "page_count": 384,
+    "synopsis": "Biology PhD candidate Olive Smith enters a fake relationship with professor Adam Carlsen, only for their supposedly convenient arrangement to become increasingly real.",
+    "image_url": "assets/books/the-love-hypothesis.jpg",
+    "TecaNota": 90,
+    "reading_date": "2026-09-08"
+  },
+  {
+    "title": "Nós Já Moramos Aqui",
+    "author": "Marcus Kliewer",
+    "genre": "Psychological Horror / Thriller",
+    "release_year": 2024,
+    "page_count": 320,
+    "synopsis": "Eve allows a family claiming to have once lived in her house to come inside. Their visit becomes increasingly disturbing as reality begins to unravel and the house reveals unsettling secrets.",
+    "image_url": "assets/books/nos-ja-moramos-aqui.jpg",
+    "TecaNota": 80,
+    "reading_date": "2026-09-03"
+  },
+  {
+    "title": "A Paciente Silenciosa",
+    "author": "Alex Michaelides",
+    "genre": "Psychological Thriller",
+    "release_year": 2019,
+    "page_count": 364,
+    "synopsis": "After shooting her husband, painter Alicia Berenson stops speaking. Psychotherapist Theo Faber becomes obsessed with uncovering the motive behind the crime and the truth hidden in her silence.",
+    "image_url": "assets/books/a-paciente-silenciosa.jpg",
+    "TecaNota": 60,
+    "reading_date": "2026-07-20"
   }
 ]
